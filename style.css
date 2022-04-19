@@ -148,7 +148,34 @@ box-shadow: var(--shadow-support);
 
 }
 
+.common-heading{
+    font-size: 4.8rem;
+    font-weight: 600;
+    margin-bottom: 6rem;
+    text-transform: capitalize;
+    position: relative;
+}
 
+.common-heading::before{
+    content: "";
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: var(--helper);
+    border-radius: 50%;
+}
+
+.common-heading::after{
+    content: "";
+    position: absolute;
+    top: 118%;
+    left: 1.5rem;
+    min-width: 20rem;
+    height: 0.3rem;
+    background-color: var(--helper);
+}
 /* ============================
 hero section
 ============================ */
@@ -201,3 +228,4 @@ Bio section starts.
     max-width: 80%;
     box-shadow: -2rem -2rem 0 0 var(--helper);
 }
+
